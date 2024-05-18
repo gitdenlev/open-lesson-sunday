@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2e7ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ca9bff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+header img {
+  max-width: 200px;
+}
+
+.icon {
+  animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-2 {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+main {
+  text-align: center;
+  padding: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 равных столбца */
+  grid-template-rows: 2fr; /* 1 строка */
+}
+
+
+h1 {
+  font-size: 50px;
+  color: #6a0dad;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 163);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #dabeff;
+  border-radius: 10px;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  width: 300px;
+  height: 800px;
+  transition: all 0.3s;
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 1px solid #b88bcc;
+  transition: all 0.3s;
+}
+
+.card-content a {
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(106, 0, 173, 1) 0%,
+    rgba(202, 155, 255, 1) 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+  scale: 1.1;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card:hover {
+  border: 3px solid rgb(188, 30, 251);
+}
+
+.card-content h2 {
+  font-size: 24px;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #4b2d5f;
+}
+
+footer {
+  background-color: #6a0dad;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+/* Стили для трека */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Цвет трека */
+}
+
+/* Стили для ползунка */
+::-webkit-scrollbar-thumb {
+  background-color: purple; /* Цвет ползунка */
+  border-radius: 5px; /* Закругленные края ползунка */
+}
